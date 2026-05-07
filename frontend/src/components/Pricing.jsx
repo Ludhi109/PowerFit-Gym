@@ -93,10 +93,8 @@ const Pricing = () => {
                 ))}
               </div>
 
-              <Link
-                to="contact"
-                smooth={true}
-                duration={500}
+              <a
+                href="#contact"
                 className={`w-full py-4 uppercase tracking-wider font-bold transition-colors cursor-pointer text-center block ${
                   plan.recommended 
                     ? 'bg-red-600 hover:bg-red-700 text-white' 
@@ -104,7 +102,7 @@ const Pricing = () => {
                 }`}
               >
                 Join Now
-              </Link>
+              </a>
             </motion.div>
           ))}
         </div>
