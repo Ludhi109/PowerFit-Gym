@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Check } from 'lucide-react';
+import { Link } from 'react-scroll';
 
 const plans = [
   {
@@ -92,13 +93,18 @@ const Pricing = () => {
                 ))}
               </div>
 
-              <button className={`w-full py-4 uppercase tracking-wider font-bold transition-colors ${
-                plan.recommended 
-                  ? 'bg-red-600 hover:bg-red-700 text-white' 
-                  : 'bg-zinc-800 hover:bg-white hover:text-zinc-950 text-white'
-              }`}>
+              <Link
+                to="contact"
+                smooth={true}
+                duration={500}
+                className={`w-full py-4 uppercase tracking-wider font-bold transition-colors cursor-pointer text-center block ${
+                  plan.recommended 
+                    ? 'bg-red-600 hover:bg-red-700 text-white' 
+                    : 'bg-zinc-800 hover:bg-white hover:text-zinc-950 text-white'
+                }`}
+              >
                 Join Now
-              </button>
+              </Link>
             </motion.div>
           ))}
         </div>
