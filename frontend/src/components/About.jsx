@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { CheckCircle2 } from 'lucide-react';
+import { Link } from 'react-scroll';
 
 const About = () => {
   const features = [
@@ -63,9 +64,14 @@ const About = () => {
               ))}
             </div>
 
-            <button className="mt-10 bg-white text-zinc-950 hover:bg-red-600 hover:text-white font-bold py-3 px-8 uppercase tracking-wider transition-colors duration-300">
+            <Link
+              to="services"
+              smooth={true}
+              duration={500}
+              className="mt-10 inline-block bg-white text-zinc-950 hover:bg-red-600 hover:text-white font-bold py-3 px-8 uppercase tracking-wider transition-colors duration-300 cursor-pointer"
+            >
               Learn More
-            </button>
+            </Link>
           </motion.div>
 
         </div>
