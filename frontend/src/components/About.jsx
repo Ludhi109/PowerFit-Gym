@@ -64,12 +64,6 @@ const About = () => {
               ))}
             </div>
 
-            <a
-              href="#services"
-              className="mt-10 inline-block bg-white text-zinc-950 hover:bg-red-600 hover:text-white font-bold py-3 px-8 uppercase tracking-wider transition-colors duration-300 cursor-pointer"
-            >
-              Learn More
-            </a>
           </motion.div>
 
         </div>
