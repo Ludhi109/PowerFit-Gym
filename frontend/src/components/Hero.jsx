@@ -14,7 +14,7 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-zinc-950 via-zinc-950/80 to-transparent"></div>
       </div>
 
-      <div className="container mx-auto px-6 md:px-12 relative z-10 flex flex-col items-start text-left mt-20">
+      <div className="container mx-auto px-6 md:px-12 relative z-10 flex flex-col items-start text-left mt-32 md:mt-40">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -37,10 +37,12 @@ const Hero = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-5xl md:text-7xl lg:text-8xl font-bold font-oswald text-white leading-tight mb-6"
+            className="text-5xl md:text-7xl lg:text-8xl font-bold font-oswald text-white leading-[1.1] mb-8"
           >
             TRANSFORM YOUR <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-700">BODY</span><br />
-            TRANSFORM YOUR <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-700">LIFE</span>
+            <div className="mt-2 md:mt-4">
+              TRANSFORM YOUR <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-700">LIFE</span>
+            </div>
           </motion.h1>
 
           <motion.p
